@@ -1,0 +1,7 @@
+{
+  "name": "cpptradegame",
+  "version-string": "1",
+  "dependencies": [
+    "sqlite3"
+  ]
+}
