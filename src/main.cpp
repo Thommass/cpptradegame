@@ -1,5 +1,5 @@
 #include <cstdio>
-#include <sqlite3.h>
+#include "sqlite3.h"
 
 static int callback(void *data, int argc, char **argv, char **azColName) {
     int i;
@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
     const char *data = "Callback function called";
 
     /* Open database */
-    rc = sqlite3_open("C:\\Users\\Thomas\\CLionProjects\\cpptradegame\\handelsschepen.db", &db);
+    rc = sqlite3_open(R"(C:\Users\Thomas\CLionProjects\cpptradegame\handelsschepen.db)", &db);
 
 
     if (rc) {
